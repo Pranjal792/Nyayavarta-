@@ -1,0 +1,38 @@
+/* General Styles */ body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: url('background.jpg') no-repeat center center fixed; background-size: cover; color: #fff; }
+
+/* Loading Screen */ #loading-screen { position: fixed; width: 100%; height: 100%; background: #0d0d0d; display: flex; justify-content: center; align-items: center; z-index: 1000; }
+
+#logo-animation { width: 200px; animation: fadeOut 2s ease-in-out forwards; }
+
+@keyframes fadeOut { 0% { opacity: 1; } 100% { opacity: 0; display: none; } }
+
+/* Header */ header { display: flex; justify-content: space-between; align-items: center; background: rgba(13, 13, 13, 0.9); padding: 20px; position: fixed; width: 100%; top: 0; z-index: 10; }
+
+.logo-container { display: flex; align-items: center; }
+
+.header-logo { width: 60px; margin-right: 15px; }
+
+.firm-name h1 { font-size: 24px; margin: 0; }
+
+.firm-name p { font-size: 14px; margin: 0; color: #ccc; }
+
+/* Navigation */ nav ul { list-style: none; padding: 0; display: flex; margin: 0; }
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+
+nav ul li a:hover { color: #f4a261; }
+
+/* Page Sections */ .page { padding: 100px 20px; text-align: center; min-height: 100vh; }
+
+#home { background: rgba(0, 0, 0, 0.7); padding: 150px 20px; }
+
+#about, #mission, #team, #contact { background: rgba(25, 25, 25, 0.8); margin: 20px auto; padding: 50px; border-radius: 10px; }
+
+h2 { color: #f4a261; font-size: 28px; }
+
+ul li { text-align: left; font-size: 18px; margin: 10px 0; }
+
+/* Footer */ footer { text-align: center; background: rgba(13, 13, 13, 0.9); padding: 20px; position: relative; bottom: 0; width: 100%; }
+
