@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyayavarta Law Firm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .header img {
+            height: 80px;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        .nav a:hover {
+            background: gold;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Nyayavarta Law Firm Logo">
+        <h1>NYAYAVARTA LAW FIRM <br> ऋतम् सत्यं न्यायम् – Truth, Order, and Justice</h1>
+    </div>
+    <div class="nav">
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('about')">About Us</a>
+        <a href="#" onclick="showContent('specialization')">Specialization</a>
+        <a href="#" onclick="showContent('mission')">Mission</a>
+        <a href="#" onclick="showContent('contact')">Contact</a>
+        <a href="#" onclick="showContent('team')">The Team</a>
+    </div><div id="home" class="content active">
+    <h2>Welcome to Nyayavarta Law Firm</h2>
+    <p>Adv. Pranjal Joshi and team welcome you to the best legal solution provider.</p>
+</div>
+<div id="about" class="content">
+    <h2>About Us</h2>
+    <p>At Nyayavarta Law Firm, we are committed to delivering comprehensive legal solutions...</p>
+</div>
+<div id="specialization" class="content">
+    <h2>Our Areas of Specialization</h2>
+    <ul>
+        <li>Insolvency & Bankruptcy Law</li>
+        <li>Intellectual Property Law</li>
+        <li>Taxation Laws</li>
+        <li>Arbitration & Mediation</li>
+        <li>Anti-Corruption Laws</li>
+        <li>Technology Laws</li>
+    </ul>
+</div>
+<div id="mission" class="content">
+    <h2>Our Mission</h2>
+    <p>✔ Uphold the highest standards of justice and fairness in every case...</p>
+</div>
+<div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>📍 Address: [Provide Address Here]</p>
+    <p>📞 Phone: +91 7470326394</p>
+    <p>📧 Email: asknyayavarta@gmail.com, nyayavarta@gmail.com</p>
+</div>
+<div id="team" class="content">
+    <h2>The Team</h2>
+    <p>Meet the dedicated professionals behind Nyayavarta Law Firm...</p>
+</div>
+
+<script>
+    function showContent(section) {
+        let contents = document.getElementsByClassName('content');
+        for (let i = 0; i < contents.length; i++) {
+            contents[i].classList.remove('active');
+        }
+        document.getElementById(section).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
